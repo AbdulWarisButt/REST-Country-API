@@ -1,110 +1,384 @@
 body{
-    background-color: hsl(0, 0%, 98%);
-    color:  hsl(200, 15%, 8%);
+  background-color: rgb(245, 241, 241);
+  color:  hsl(200, 15%, 8%);
+}
+.parent{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#nav{
+  /* box-shadow: 0 0.15rem 0.6rem rgb(255, 253, 253); */
+  background-color: rgb(255, 255, 255);
+  padding-bottom: 30px;
+  display: flex;
+  align-items: center;
+  
+}
+#navText{
+    font-family: var(--bs-body-font-family);
+    font-size: calc(1.3rem + .6vw);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    margin-left: 80px;
+    margin-top: 20px;
+}
+#searchIcon{
+  /* margin-left: 100px; */
+  /* box-shadow: 0 0 8px 0px rgba(116, 114, 114, 0.15); */
+margin-left: 80px;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 4px;
+  align-items: center;
+  vertical-align: middle;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  color: var(--textColor);
+  background-color: white;
+  width: 380px;
+}
+#iconColor{
+  margin-left: 15px;
+}
+.form-control{
+  fill: none;
+}
+#mySearch{
+  /* margin-left: 5px; */
+  width: fit-content;
+  height: fit-content;
+  /* padding: 13px 20px; */
+ border-radius: 0;
+ border: none;
+ margin-left: -50px;
+
+}
+#mySearch:focus {
+  outline: none;
+  box-shadow: none;
+}
+#secondForm{
+  /* margin: auto; */
+    margin-right: 6px;
+    padding: 55px 87px;
+    width: auto;
+}
+
+.allapi{
+    display: grid;
+    place-items: center;
+    grid-template-columns: 100px 100px 100px 100px;
+    row-gap: 80px;
+    column-gap: 230px;
+    margin-left: 180px;
+    margin-right: 90px;
+    
+}
+.dark-mode {
+    
+    border-radius: 0%;
+    background-color:  hsl(207, 26%, 17%);
+    color: hsl(0, 0%, 100%);
   }
+.darkMode{
+  font-size: calc(.6rem + .6vw);
+  font-family: var(--bs-body-font-family);
+    cursor: pointer;
+    float: right;
+    margin-top: 0.5%;
+    margin-right: 50px;
+}
+
+.clr{
+    /* color: grey; */
+    margin-left: auto;
+}
+
+.countryCard{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 280px;
+  height: 415px;
+  margin: 45px 1px;
+  margin-left: auto;
+  
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0.25rem 0.5rem rgb(231, 228, 228);
+  transition: all 0.3s;
+  /* background-color: white;*/
+  
+}
+.flag{
+     border-radius: 4px 0 0 4px;
+     /* box-shadow: 0 0.25rem 0.5rem hsl(210, 4%, 90%); */
+     height: 180px;
+     width: 280px;
+}
+.description{
+    /* font-weight: bold; */
+    margin: 37px 15px;
+    
+    font-family: var(--bs-body-font-family);
+}
+/* @media only screen and (max-width: 2142px){
+.parent{
+  margin-right: 400px;
+}
+} */
+
+@media only screen and (max-width: 1075px){
   #nav{
-    box-shadow: 0 0.15rem 0.6rem rgb(102, 101, 101);
-    padding-bottom: 15px;
+    /* width: 450px; */
+    display: flex;
+    align-items: center;
   }
-  .navEdit{
-      font-family: var(--bs-body-font-family);
-      font-size: calc(1.3rem + .6vw);
-      margin: auto;
-      margin-left: 130px;
+  #navText{
+    margin-left: 15px;
   }
   #mySearch{
-    margin: auto;
-    margin-left: 130px;
-    color: hsl(0, 0%, 52%);
-   
-  
+    margin-left: 40px;
+  padding: 10px 10px;
   }
   #secondForm{
-    margin: auto;
-      margin-right: 130px;
+    margin-right: -1px;
   }
-  
   .allapi{
-      margin: 20px 264px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: row;
-      flex-wrap: wrap;
-      
-  }
-  .dark-mode {
-      
-      border-radius: 0%;
-      background-color:  hsl(207, 26%, 17%);
-      color: hsl(0, 0%, 100%);
-    }
-  .darkMode{
-    font-size: calc(.6rem + .6vw);
-    font-family: var(--bs-body-font-family);
-      cursor: pointer;
-      float: right;
-      margin-top: 0.5%;
-      margin-right: 130px;
-  }
-  
-  .clr{
-      /* color: grey; */
-      margin-left: auto;
-  }
-  .countryCard{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 280px;
-    height: 415px;
-    margin: 45px 90px;
-    /* margin-left: -70%; */
-    margin-left: auto;
-    /* margin-right: auto; */
-    overflow: hidden;
-    box-shadow: 0 0.25rem 0.5rem rgb(17, 17, 17);
-    transition: all 0.3s;
-  }
-  .flag{
-       border-radius: 4px 0 0 4px;
-       /* border: 1px solid wheat; */
-       box-shadow: 0 0.25rem 0.5rem hsl(207, 26%, 17%);
-  }
-  .description{
-      /* font-weight: bold; */
-      margin: 37px 15px;
-      
-      font-family: var(--bs-body-font-family);
-  }
-  .classNam{
-      font-size: 1px;
-  }
-  
-  @media screen and (max-width: 600px) {
-  
-      #mySearch input[type="text"] {
-        border: 1px solid #ccc;
-          float: left;
-          padding: 6px;
-          border: none;
-          margin-top: 8px;
-          width: 100%;
-          font-size: 17px;
-        }
-        
-      }
+    grid-template-columns: 10px 10px 10px -1px;
+    margin-left: 130px; 
+    column-gap: 160px;
+    width: auto;
     
-    .header {
-      position: sticky;
-      height: 1em;
+    
+    /* margin-right: 4000px; */
+  }
+  /* .flag{
+    width: auto;
+    height: auto;
+  } */
+  .countryCard{
+  width: 200px;
+  
+  }
+}
+@media only screen and (max-width: 980px){
+  .allapi{
+    grid-template-columns: 10px 10px 10px ;
+    margin-left: 160px; 
+    column-gap: 10px;
+    width: auto;
+    
+    
+    /* margin-right: 4000px; */
+  }
+}
+
+@media only screen and (max-width: 800px){
+  .allapi{
+    grid-template-columns: 10px 10px;
+    margin-left: 200px; 
+    column-gap: 340px;
+    width: auto;
+    
+    
+    /* margin-right: 4000px; */
+  }
+}
+@media only screen and (max-width: 663px){
+  .allapi{
+    grid-template-columns: 10px 10px;
+    margin-left: 160px; 
+    column-gap: 280px;
+    width: auto;
+    
+    
+    /* margin-right: 4000px; */
+  }
+}
+@media only screen and (max-width: 561px){
+  .allapi{
+    grid-template-columns: 10px 10px;
+    margin-left: 130px; 
+    column-gap: 220px;
+    width: auto;
+    
+    
+    /* margin-right: 4000px; */
+  }
+}
+@media only screen and (max-width: 460px){
+  #nav{
+    width: 450px;
+  }
+ .darkMode{
+  margin-right: 10px;
+ }
+  .allapi{
+    display: grid;
+    grid-template-columns: 65px ;
+    column-gap: 100px;
+    margin-left: 180px;
+  }
+  #form {
+    margin-left: -75px;
+  }
+
+}
+
+
+  @media screen and (max-width: 2150px){
+    .parent{
       display: flex;
-      padding: 2em;
       align-items: center;
       justify-content: space-between;
-      margin-bottom: 0px;
-      background-color: var(--headerColor);
-      box-shadow: 10px 10px 10px -5px var(--shadowColor);
+      column-gap: auto;
     }
+    .allapi{
+      column-gap: 450px;
+    }
+    .countryCard{
+      width: auto;
+      height: 415px;
+    }
+    #mySearch{
+      margin-left: 12px;
+    /* padding: 10px 10px; */
+    }
+  }
+  @media screen and (max-width: 1950px){
+    #navText{
+      margin-left: 120px;
+    }
+    #mySearch{
+      margin-left: 12px;
+    /* padding: 10px 10px; */
+    }
+    .darkMode{
+      margin-right: 100px;
+     }
+    .allapi{
+      column-gap: 350px;
+    }
+    .countryCard{
+      width: auto;
+      height: 400px;
+    }
+
+    
+  }
+  @media screen and (max-width: 1750px){
+    .allapi{
+      column-gap: 300px;
+    }
+  } @media screen and (max-width: 1650px){
+    .allapi{
+      column-gap: 250px;
+    }
+    #secondForm{
+      margin-right: 110px;
+    }
+    .darkMode{
+      margin-right: 200px;
+    }
+  } @media screen and (max-width: 1510px){
+      #nav{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+      }
+      .allapi{
+          flex-direction: row;
+          justify-content: space-between;
+          margin: auto;
+        }
+      .countryCard{
+        margin-left: 10px;
+      }
+      } @media screen and (max-width: 1420px){
+        .allapi{
+          grid-template-columns: 100px 100px 100px;
+        }
+        .darkMode{
+          margin-right: 150px;
+        }
+      } @media screen and (max-width: 1060px){
+        .allapi{
+          grid-template-columns: 100px 100px;
+        }
+        #mySearch{
+          margin-top: 5px;
+          
+            margin-left: 12px;
+          /* padding: 10px 10px; */
+          
+        }
+        #form{
+          margin-top: 30px;
+        }
+        #secondForm{
+          margin-left: 70px;
+        }
+        #searchIcon{
+          width: 335px;
+          height: 45px;
+        }
+      } @media screen and (max-width: 860px){
+        #navText{
+          margin-left: 20px;
+        }
+        #mySearch{
+          margin-left: 20px;
+        }
+      } @media screen and (max-width: 650px){
+        .darkMode{
+          margin-right: 60px;
+        }
+        #secondForm{
+          margin-left: 50px;
+        }
+        .allapi{
+          grid-template-columns: 100px;
+        }
+      } @media screen and (max-width: 510px){
+        #navText{
+          margin-left: 10px;
+        }
+        #mySearch{
+          margin-left: 10px;
+        }
+        .darkMode{
+          margin-right: 10px;
+        }
+        #secondForm{
+          margin-left: -20px;
+        }
+        #region{
+          width: auto;
+        }
+      } @media screen and (max-width: 400px){
+        #region{
+          width: auto;
+        }
+        .allapi{
+          margin-left: 150px;
+        }
+      } @media screen and (max-width: 300px){
+        .allapi{
+          margin-left: 150px;
+        }
+      } @media only screen and (max-width: 375px){
+        #form{
+          margin-top: 30px;
+        }
+        #region{
+          margin-top: -10px;
+        }
+      }
+

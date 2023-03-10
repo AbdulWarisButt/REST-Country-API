@@ -1,149 +1,555 @@
 .navEdit{
-    font-family: var(--bs-body-font-family);
-    font-size: calc(1.3rem + .6vw);
-    margin: auto;
-    margin-left: 130px;
-  }
-  #nav{
-    box-shadow: 0 0.15rem 0.6rem rgb(102, 101, 101);
-    padding-bottom: 15px;
-  }
-  .clr{
-    /* color: grey; */
-    margin-left: auto;
-  }
-  .arrow {
-      border: solid black;
-      /* background-color: white; */
-      border-width: 0 3px 3px 0;
-      display: inline-block;
-      padding: 5px 5px;
-      margin: 5px 5px;
-    }
-    
-    .left {
-      transform: rotate(135deg);
-      -webkit-transform: rotate(135deg);
-    }
-    .bk{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .display{
-      display: none;
-    }
-    .allapi{
-      display: flex;
-      justify-content: center;
-      align-items: center;
+  font-family: var(--bs-body-font-family);
+  font-size: calc(1.3rem + .6vw);
+  margin: auto;
+  margin-left: 130px;
+}
+#nav{
+  box-shadow: 0 0.15rem 0.6rem rgb(68, 68, 68);
+  padding-bottom: 30px;
+  background-color: rgb(255, 255, 255);
+}
+.clr{
+  /* color: grey; */
+  margin-left: auto;
+}
+.arrow {
+  border: solid black;
+  /* background-color: white; */
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 5px 5px;
+  margin: 5px 5px;
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+.bk{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.display{
+  display: none;
+}
+.allapi{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+ 
+}
+.dark-mode {
   
-     
-    }
-    .dark-mode {
-      
-      border-radius: 0%;
-      background-color:  hsl(207, 26%, 17%);
-      color: hsl(0, 0%, 100%);
-    }
-    #btn{
-        background-color: white;
-        border-radius: 8px;
-        box-shadow: 0 0.15rem 0.6rem rgb(216, 210, 210);;
-        border: none;
-        color: black;
-        padding: 16px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 15px;
-        margin: 4px 2px;
-    }
-  
-    .darkMode{
-      font-size: calc(.6rem + .6vw);
-      font-family: var(--bs-body-font-family);
-        cursor: pointer;
-        float: right;
-        margin-top: 0.5%;
-        margin-right: 130px;
-    }
-    #backButton{
-      /* border: 2px solid black; */
-      /* border-radius: 10px; */
-      /* box-shadow: 2px 2px ; */
-      /* margin: auto; */
-    margin-left: 150px;
-    margin-top: 3%;
+  border-radius: 0%;
+  background-color:  hsl(207, 26%, 17%);
+  color: hsl(0, 0%, 100%);
+}
+#btn{
     background-color: white;
-    color: black;
+    border-radius: 8px;
     box-shadow: 0 0.15rem 0.6rem rgb(216, 210, 210);
-    }
-    #borders{
-      background-color: white;
+    border: none;
     color: black;
-    box-shadow: 0 0.15rem 0.6rem rgb(216, 210, 210);
-    }
-   #flagImage{
-    margin: 50px 193px;
-      position: fixed;
-      bottom: 100;
-      left: 0;
-      width: 500px;
-      height: 350px;
-      /* border: 1px solid wheat; */
-      box-shadow: 0 0.25rem 0.5rem rgb(17, 17, 17);
-      /* width: 300px;
-      border: 3px solid #73AD21; */
-      /* margin-left: auto;
-      margin-right: auto;
-      display: block; */
-  
-   }
-   .description{
-    margin: 50px 147px;
-      position: fixed;
-      font-family: var(--bs-body-font-family);
-      text-align:left;
-      
-      /* font-size: 20px; */
-   }
-   @media  (max-width: 1080px)  {
-    #flagImage{
-      position: relative;
-      width: 500px;
-      top: auto;
-      margin: 250px 10px;
-     
-    }
-    .description{
-      /* font-size: auto; */
-      margin: 20px 20px;
-      text-align: left;
-      margin: auto;
-      
-   }
-   }
-   @media (min-width: 1900px){
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 5px;
+}
+.des1{
+    margin-left: 100px;
+}
+.des3{
+    margin-left: 100px;
+}
+.darkMode{
+  font-size: calc(.6rem + .6vw);
+  font-family: var(--bs-body-font-family);
+    cursor: pointer;
+    float: right;
+    margin-top: 0.5%;
+    margin-right: 130px;
+}
+#backButton{
+  /* border: 2px solid black; */
+  /* border-radius: 10px; */
+  /* box-shadow: 2px 2px ; */
+  /* margin: auto; */
+margin-left: 150px;
+margin-top: 3%;
+background-color: white;
+color: black;
+box-shadow: 0 0.15rem 0.6rem rgb(216, 210, 210);
+}
+#borders{
+  background-color: white;
+color: black;
+box-shadow: 0 0.15rem 0.6rem rgb(216, 210, 210);
+}
+#flagImage{
+  margin: 50px 193px;
+    position: absolute;
+    bottom: 100;
+    left: 0;
+    width: 500px;
+    height: 350px;
+    /* border: 1px solid wheat; */
+    box-shadow: 0 0.25rem 0.5rem rgb(17, 17, 17);
+    /* width: 300px;
+    border: 3px solid #73AD21; */
+    /* margin-left: auto;
+    margin-right: auto;
+    display: block; */
+
+ }
+#card2 .image2 {
+  box-shadow:var(--shadowColor);
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+grid-area: image2;
+}
+
+#card2 .des1 {
+display: flex;
+justify-content: start;
+align-items: start;
+flex-direction: column;
+grid-area: des1;
+}
+
+#card2 .des2 {
+display: flex;
+justify-content: start;
+align-items: start;
+flex-direction: column;
+grid-area: des2;
+margin-top: 70px;
+}
+
+#card2 .des3 {
+grid-area: des3;
+display: flex;
+justify-content: start;
+align-items: start;
+
+flex-direction: column;
+}
+
+#card2{
+display: grid;
+grid-template-columns:  minmax(250px, 1.5fr) 1fr 1fr ;
+grid-template-rows: 0.7fr 0.15fr;
+grid-template-areas:
+    "image2 des1 des2"
+    "image2 des3 des3";
+grid-gap: 1rem;
+text-align: center;
+justify-content: center;
+background-color: var(--headerColor);
+  color: var(--textColor);
+  margin: 1rem;
+
+}
+#card2 .image2 img{
+width: 100%;
+height: 100%;
+
+box-shadow: 0 0.25rem 0.5rem rgb(98 95 95);
+transition: all 0.3s;
+}
+ @media only screen and (min-width: 1700px){
   #flagImage{
-    width: 700px;
-    max-width: 100%;
-    height: auto;
-    margin: 300px 200px;
-    
+    width: 640px;
+    height: 430px;
   }
-  .description{
-    margin: 300px 200px;
-    font-size: 30px;
+  #card2 .des1{
+    margin-top: 85px;
+    margin-left: 140px;
   }
-   }
-   @media (max-width: 550px){
-    #flagImage{
-      width: 350px;
-    }
-    .description{
-      text-align: left;
-      margin: auto;
-      margin: 10px 10px;
-    }
-   }
+  #card2 .des2{
+    margin-top: 155px;
+    margin-left: 140px;
+  }
+  #card2 .des3{
+    margin-left: 140px;
+  }
+} @media  screen and (min-width: 1930){
+  #card2 .des1{
+    margin-left: 85px;
+  }
+  #card2 .des2{
+    margin-left: 85px;
+  }
+  #card2 .des3{
+    margin-left: 85px;
+  }
+} @media screen and (max-width: 1700px){
+  #flagImage{
+    width: 525px;
+    height: 365px;
+    margin-top: 100px;
+  }
+  #card2 .des1{
+      margin-top: 145px;
+      margin-left: 185px;
+  }
+  #card2 .des2{
+    margin-top: 220px;
+    margin-left: 120px;
+}
+#card2 .des3{
+  margin-top: 1px;
+  margin-left: 190px;
+}
+}
+@media only screen and (max-width: 280px){
+  #nav{
+
+  }
+  #flagImage {
+    margin: 3px 7px;
+    width: 258px;
+    height: 200px;
+    margin-top: 30px;
+  }
+  
+  #card2 .des1{
+    margin-top: 280px;
+    margin-left: 75px;
+    text-align: start;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    /* float: left; */
+  }
+  #card2 .des2{
+    margin-top: 3px;
+    margin-left: 80px;
+    text-align: start;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    float: left;
+  }
+  #card2 .des3{
+    margin-top: 3px;
+    margin-left: 80px;
+    text-align: start;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    float: left;
+  }
+}
+@media only screen and (max-width: 1350px){
+
+  #flagImage {
+    margin: 3px 110px;
+    width: 470px;
+    height: 340px;
+    margin-top: 160px;
+  }
+  
+  #card2 .des1{
+    margin-top: 225px;
+    margin-left: 135px;
+    text-align: start;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    /* float: left; */
+  }
+  #card2 .des2{
+    margin-top: 298px;
+    margin-left: 75px;
+    text-align: start;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    float: left;
+  }
+  #card2 .des3{
+    margin-top: 3px;
+    margin-left: 140px;
+    text-align: start;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    float: left;
+  }
+}
+@media only screen and (max-width: 1160px){
+
+  #flagImage {
+    margin: 3px 55px;
+    width: 395px;
+    height: 265px;
+    margin-top: 160px;
+  }
+  
+  #card2 .des1{
+    margin-top: 200px;
+    margin-left: 105px;
+    text-align: start;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    /* float: left; */
+  }
+  #card2 .des2{
+    margin-top: 270px;
+    margin-left: 60px;
+    text-align: start;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    float: left;
+  }
+  #card2 .des3{
+    margin-top: 3px;
+    margin-left: 107px;
+    text-align: start;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    float: left;
+  }
+}
+@media only screen and (max-width: 850px){
+  .navEdit{
+    margin-left: 2px;
+  }
+  #flagImage {
+    /* text-align: start; */
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    margin: 3px 130px;
+    width: 400px;
+    height: 270px;
+    margin-top: 120px;
+  }
+  
+  #card2 .des1{
+    margin-top: 440px;
+    margin-left: -160px;
+    text-align: start;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    /* float: left; */
+  }
+  #card2 .des2{
+    margin-top: 505px;
+    margin-left: -40px;
+    text-align: start;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    float: left;
+  }
+  #card2 .des3{
+    margin-top: 3px;
+    margin-left: -155px;
+    text-align: start;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    float: left;
+  }
+}
+@media only screen and (max-width:540px){
+  .navEdit{
+    margin-left: 2px;
+  }
+  #flagImage {
+    margin: 3px 7px;
+   
+    width: 310px;
+    height: 210px;
+  }
+  .navEdit{
+    margin-left: 2px;
+  }
+  .darkMode{
+    margin-right: 2px;
+  }
+  #backButton{
+    margin-left: 10px;
+  }
+  #card2 .des1{
+    margin-top: 230px;
+    margin-left: -245px;
+    text-align: start;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    /* float: left; */
+  }
+  #card2 .des2{
+    margin-top: 285px;
+    margin-left: -125px;
+    text-align: start;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    float: left;
+  }
+  #card2 .des3{
+    margin-top: 3px;
+    margin-left: -240px;
+    text-align: start;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    float: left;
+  }
+}
+@media only screen and (max-width:400px){
+  #flagImage {
+    margin: 40px 38px;
+    width: 300px;
+    height: 190px;
+  }
+  .navEdit{
+    margin-left: 2px;
+  }
+  .darkMode{
+    margin-right: 2px;
+  }
+  #backButton{
+    margin-left: 10px;
+  }
+  #card2 .des1{
+    margin-top: 280px;
+    margin-left: -245px;
+    text-align: start;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    font-size: 12px;
+    /* float: left; */
+  }
+  #card2 .des2{
+    margin-top: 337px;
+    margin-left: -125px;
+    text-align: start;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    float: left;
+    font-size: 12px;
+  }
+  #card2 .des3{
+    margin-top: 3px;
+    margin-left: -240px;
+    text-align: start;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    float: left;
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width:350px){
+  #flagImage {
+    margin: 4px 38px;
+    width: 265px;
+    height: 167px;
+    margin-left: 12px;
+  }
+  .navEdit{
+    margin-left: 2px;
+  }
+  .darkMode{
+    margin-right: 2px;
+  }
+  #backButton{
+    margin-left: 10px;
+  }
+  #card2 .des1{
+    margin-top: 230px;
+    margin-left: -255px;
+    text-align: start;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    font-size: 12px;
+    /* float: left; */
+  }
+  #card2 .des2{
+    margin-top: 282px;
+    margin-left: -125px;
+    text-align: start;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    float: left;
+    font-size: 12px;
+  }
+  #card2 .des3{
+    margin-top: -7px;
+    margin-left: -252px;
+    text-align: start;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    float: left;
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width:300px){
+  #flagImage {
+    margin: 4px 38px;
+    width: 245px;
+    height: 157px;
+    margin-left: 12px;
+  }
+  .navEdit{
+    margin-left: 2px;
+    font-size: 12px;
+  }
+  .darkMode{
+    margin-right: 2px;
+    font-size: 12px;
+  }
+  #backButton{
+    margin-left: 10px;
+  }
+  #card2 .des1{
+    margin-top: 230px;
+    margin-left: -185px;
+    text-align: start;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    font-size: 12px;
+    /* float: left; */
+  }
+  #card2 .des2{
+    margin-top: 473px;
+    margin-left: -200px;
+    text-align: start;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    float: left;
+    font-size: 12px;
+  }
+  #card2 .des3{
+    margin-top: -7px;
+    margin-left: -182px;
+    text-align: start;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    float: left;
+    font-size: 12px;
+  }
+}
